@@ -2,7 +2,6 @@ import {
   getCatalogManager,
   parseDependencySpecifier,
 } from '@nx/devkit/internal';
-import type { ParsedDependencySpecifier } from '@nx/devkit/internal';
 import {
   detectPackageManager,
   PackageManager,
@@ -21,6 +20,7 @@ import type { ResolveVersionForDependency } from 'nx/release';
 import type {
   AfterAllProjectsVersioned,
   NxReleaseVersionConfiguration,
+  ParsedDependencySpecifier,
 } from '@nx/devkit/internal';
 import { parseRegistryOptions } from '../utils/npm-config';
 import { updateLockFile } from './utils/update-lock-file';
